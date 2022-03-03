@@ -90,7 +90,7 @@ def return_book():
     print()
     if user:
         book = find_book()
-        if not book.available:
+        if book.title in user.borrowed_books:
             confirm = input("Type 'Y' if you wat to "
                             "return this book: ").upper()
             if confirm == "Y":
@@ -126,6 +126,7 @@ while new_action:
             new_action = False
     else:
         print("\n =*= That was not a valid chice ***\n")
+
 
 
 

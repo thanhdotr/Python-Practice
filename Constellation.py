@@ -58,4 +58,4 @@ def merge_all():
             ret.append(list(dfs(node,i)))
     return ret
 
-print(merge_all())
+print(f"There are {len(merge_all())} constellations ")
